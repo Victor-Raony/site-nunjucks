@@ -1,8 +1,8 @@
-@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,100;0,300;1,200&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,300;1,200&display=swap";
 
 :root{
     --color-green: #50fa7b;
-    --color_yellow: #8257e5;
+    --color_yellow: #ffcb17;
 }
 *{
     margin: 0;
@@ -83,6 +83,7 @@ header {
 
 .card{
     background-color: var(--color_yellow);
+    display: grid;
 }
 
 .card__image-container img{
@@ -92,19 +93,25 @@ header {
 .card__content,
 .card__info{
     padding: 24px;
+    color: #ffffff;
+    font-weight: 400;
 }
 
 .card__info{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #0e0c04;
 }
 
 .card__price{
     background-color: var(--color_yellow);
-    filter: brightness(90%);
-    pad: 5px 20px;
+    filter: brightness(95%);
+    pad: 5px 25px;
     border-radius: 20px;
     text-align: center;
+    color: rgb(8, 8, 8);
+    font-weight: 400;
 }
 
 /*===MOdal===*/
