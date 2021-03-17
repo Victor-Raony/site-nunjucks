@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout.njk" %}
 
 {% block head %}
 
@@ -16,83 +16,22 @@
 
     <section class="cards">
 
-        <div class="card" id="s3eqhq0dRnE">
+        {% for item in items %}
+
+        <div class="card" id="{{item.id}}">
             <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/s3eqhq0dRnE/maxresdefault.jpg" alt="Power BI">
+                <img src="https://img.youtube.com/vi/{{item.id}}/maxresdefault.jpg" alt="{{item.title}}">
             </div>
             <div class="card__content">
-                <p>Power BI, Menu customizado usando JSON com IDE Visual Studio | Karine Lago</p>
+                <p>{{item.title}}</p>
             </div>
             <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">FREE</p>
+                <p>{{item.duration}}</p>
+                <p class="card__price">{{item.price}}</p>
             </div>
         </div>
 
-        <div class="card" id="0RFZihkovU4">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/0RFZihkovU4/maxresdefault.jpg" alt="Power BI">
-            </div>
-            <div class="card__content">
-                <p>Power BI, Dashboard de acões do Google | Karine Lago</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">FREE</p>
-            </div>
-        </div>
-
-        <div class="card" id="w3C3Tvucu0c">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/w3C3Tvucu0c/maxresdefault.jpg" alt="Power BI">
-            </div>
-            <div class="card__content">
-                <p>Power BI, Quanto cobrar para realizar um projeto em Poer BI? | Karine Lago</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">FREE</p>
-            </div>
-        </div>
-
-        <div class="card" id="pVsj5iZfxpY">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/pVsj5iZfxpY/maxresdefault.jpg" alt="Power BI">
-            </div>
-            <div class="card__content">
-                <p>Power BI, Versão Premium por Usuario está disponivel, confira o video | Karine Lago</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">FREE</p>
-            </div>
-        </div>
-
-        <div class="card" id="0aPXOnrjrvI">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/0aPXOnrjrvI/maxresdefault.jpg" alt="Power BI">
-            </div>
-            <div class="card__content">
-                <p>Power BI, 11 Formas de compartilhar relatorios entre usuarios | Karine Lago</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">FREE</p>
-            </div>
-        </div>
-
-        <div class="card" id="UJKGM-HqnNU">
-            <div class="card__image-container">
-                <img src="https://img.youtube.com/vi/UJKGM-HqnNU/maxresdefault.jpg" alt="Power BI">
-            </div>
-            <div class="card__content">
-                <p>Power BI, Visiuais, indicadores de performance | Karine Lago</p>
-            </div>
-            <div class="card__info">
-                <p>57 min</p>
-                <p class="card__price">FREE</p>
-            </div>
-        </div>
+        {% endfor %}
 
     </section>
 
