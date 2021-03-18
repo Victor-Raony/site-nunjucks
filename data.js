@@ -3,7 +3,8 @@ module.exports = [
         id: "s3eqhq0dRnE",
         title: "Power BI, Menu customizado usando JSON | Karine Lago",
         duration: "57 min",
-        price:"Free"
+        price:"Free",
+        featured: true
     },
     {
         id: "0RFZihkovU4",
@@ -15,7 +16,8 @@ module.exports = [
         id: "w3C3Tvucu0c",
         title: "Power BI, Quanto cobrar para realizar um projeto em Poer BI? | Karine Lago",
         duration: "57 min",
-        price:"Free"
+        price:"Free",
+        featured: true
     },
     {
         id: "pVsj5iZfxpY",
@@ -33,7 +35,9 @@ module.exports = [
         id: "UJKGM-HqnNU",
         title: "Power BI, Visiuais, indicadores de performance | Karine Lago",
         duration: "57 min",
-        price:"Free"
+        price:"Free",
+        featured: true
+
     },
 
 ]
